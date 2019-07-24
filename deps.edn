@@ -1,0 +1,9 @@
+{:paths ["resources" "src"]
+ :deps {org.clojure/clojure {:mvn/version "RELEASE"}
+        org.clojure/core.specs.alpha {:mvn/version "0.2.44"}}
+ :aliases
+ {:test {:extra-paths ["test"]
+         :extra-deps {org.clojure/test.check {:mvn/version "RELEASE"}}}
+  :runner
+  {:extra-deps {lambdaisland/kaocha {:mvn/version "0.0-529"}}
+   :main-opts ["-m" "kaocha.runner"]}}}
