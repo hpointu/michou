@@ -6,4 +6,5 @@
          :extra-deps {org.clojure/test.check {:mvn/version "RELEASE"}}}
   :runner
   {:extra-deps {lambdaisland/kaocha {:mvn/version "0.0-529"}}
-   :main-opts ["-m" "kaocha.runner"]}}}
+   :main-opts ["-m" "kaocha.runner"]}
+  :run {:main-opts ["-m" "hpointu.michou"]}}}

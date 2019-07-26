@@ -1,0 +1,8 @@
+layer base:
+
+  into ~ :
+    .vimrc
+    .tmux.conf <- tmux.conf
+
+    into .clojure :
+      deps.edn <- clojure/deps.edn
